@@ -1,0 +1,23 @@
+{
+  "id": 5,
+  "name": "caterer",
+  "contact": "+852 12345678",
+  "image": "",
+  "location": "",
+  "region": "Hung Hom",
+  "createdAt": "2018-07-07T04:45:10.674Z"
+},
+
+// {
+//   "id": 5,
+//   "collected": null,
+//   "status": "PENDING",
+//   "name": "caterer",
+//   "createdAt": "2018-07-07T08:12:36.163Z",
+//   "updatedAt": "2018-07-07T08:12:36.163Z",
+//   "location": "Hung Hom",
+//   "donatedBy": 5,
+//   "quantity": 8,
+//   "description": "various",
+//   "preferred pickup": "THU"
+// },
