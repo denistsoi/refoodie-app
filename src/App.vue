@@ -1,17 +1,16 @@
 <template>
   <div id="app">
-    <img id="logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Refoodie"/>
+    <Navbar />
+    <router-view></router-view>
   </div>
 </template>
-
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Navbar from './Navbar.vue';
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    Navbar
   }
 }
 </script>
@@ -27,6 +26,5 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
