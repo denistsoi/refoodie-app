@@ -3,8 +3,8 @@
     <img id="logo" src="../assets/logo.png">
     <h1>{{ msg }}</h1>
     <p>
-      This is a site for donating your unwanted items <br>
-      to servicing underrepresented communities in Hong Kong.
+      Donate your unwanted items to service<br />
+      underrepresented communities in Hong Kong.
     </p>
   </div>
 </template>

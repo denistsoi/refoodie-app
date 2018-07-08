@@ -3,11 +3,11 @@ import VueRouter from 'vue-router'
 import VueMaterial from 'vue-material'
 import 'vue-material/dist/vue-material.min.css'
 
-
 import App from './App.vue'
 
 import Home from './components/Home';
 import Resources from './components/Resources';
+import Account from './components/Account';
 
 Vue.config.productionTip = false
 
@@ -18,7 +18,8 @@ const router = new VueRouter({
   mode: 'history',
   routes: [
     { path: '/', component: Home },
-    { path: '/resources', component: Resources }
+    { path: '/resources', component: Resources },
+    { path: '/account', component: Account }
   ]
 })
 

@@ -43,12 +43,21 @@ class ApiClient {
       });
   }
 
-  retrieve(resource, data) {
-    console.log(`retrieve ${resource}`);
-
-    return axios
-      .get(`${this.endpoint}/${resource}/`)
-      .then(response => response.data)
+  retrieve(resource, id, data) {
+    console.log(`retrieve ${resource}`, id);
+    const url = `${this.endpoint}/${resource}/${id}`;
+    console.log(url);
+    return axios({
+        method: 'get',
+        url: `${this.endpoint}/${resource}/${id}`,
+        headers: {
+          'Content-Type': 'application/json'
+        },
+      })
+      .then(response => {
+        console.log(response);
+        return response.data
+      })
       .catch(err => {
         console.error(err);
       })
